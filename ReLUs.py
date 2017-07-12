@@ -257,3 +257,92 @@ with tf.Session() as sess:
 
 print('Test Accuracy: {}'.format(test_accuracy))
 
+
+
+#####################
+##metimes you might want to adjust, or "finetune" a model that you have already trained and saved.
+###However, loading saved Variables directly into a modified model can generate errors. 
+####Let's go over how to avoid these problems.
+####TensorFlow uses a string identifier for Tensors and Operations called name. 
+###If a name is not given, TensorFlow will create one automatically.
+
+
+import tensorflow as tf
+
+tf.reset_default_graph()
+
+save_file = 'model.ckpt'
+
+# Two Tensor Variables: weights and bias
+weights = tf.Variable(tf.truncated_normal([2, 3]), name='weights_0')
+bias = tf.Variable(tf.truncated_normal([3]), name='bias_0')
+
+saver = tf.train.Saver()
+
+# Print the name of Weights and Bias
+print('Save Weights: {}'.format(weights.name))
+print('Save Bias: {}'.format(bias.name))
+
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    saver.save(sess, save_file)
+
+# Remove the previous weights and bias
+tf.reset_default_graph()
+
+# Two Variables: weights and bias
+bias = tf.Variable(tf.truncated_normal([3]), name='bias_0')
+weights = tf.Variable(tf.truncated_normal([2, 3]) ,name='weights_0')
+
+saver = tf.train.Saver()
+
+# Print the name of Weights and Bias
+print('Load Weights: {}'.format(weights.name))
+print('Load Bias: {}'.format(bias.name))
+
+with tf.Session() as sess:
+    # Load the weights and bias - No Error
+    saver.restore(sess, save_file)
+
+print('Loaded Weights and Bias successfully.')
+
+
+### DROPOUT
+### Mata de manera exogana a algunas neuronas mientras entrena, evita overfitting y hace
+### mas robusta la red
+
+import tensorflow as tf
+
+hidden_layer_weights = [
+    [0.1, 0.2, 0.4],
+    [0.4, 0.6, 0.6],
+    [0.5, 0.9, 0.1],
+    [0.8, 0.2, 0.8]]
+out_weights = [
+    [0.1, 0.6],
+    [0.2, 0.1],
+    [0.7, 0.9]]
+
+# Weights and biases
+weights = [
+    tf.Variable(hidden_layer_weights),
+    tf.Variable(out_weights)]
+biases = [
+    tf.Variable(tf.zeros(3)),
+    tf.Variable(tf.zeros(2))]
+
+# Input
+features = tf.Variable([[0.0, 2.0, 3.0, 4.0], [0.1, 0.2, 0.3, 0.4], [11.0, 12.0, 13.0, 14.0]])
+
+# TODO: Create Model with Dropout
+keep_prob = tf.placeholder(tf.float32)
+hidden_layer = tf.add(tf.matmul(features, weights[0]), biases[0])
+hidden_layer = tf.nn.relu(hidden_layer)
+hidden_layer = tf.nn.dropout(hidden_layer, keep_prob)
+
+logits = tf.add(tf.matmul(hidden_layer, weights[1]), biases[1])
+
+# TODO: Print logits from a session
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    print(sess.run(logits, feed_dict={keep_prob: 0.5}))
