@@ -509,7 +509,7 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
         del AUDUSD_ask, AUDUSD_bid, EURUSD_bid, EURUSD_ask, GBPUSD_bid, GBPUSD_ask, USDJPY_bid, USDJPY_ask
         del actions_list, actual_action, units
     
-    table_file = open('C:/Users/Diego/Desktop/MACHINE LEARNING/9 capstone_project/codigo/Q.txt', 'w') #usar wb si no funciona w
+    table_file = open('C:/Users/diego/Desktop/Machine-Learning-Nano/9 capstone_project/LOGS/Q.txt', 'w') #usar wb si no funciona w
     f = table_file
     f.write("/-----------------------------------------\n")
     f.write("| State-action rewards from Q-Learning\n")
@@ -524,14 +524,14 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
     return
 
 
-main('C:/Users/Diego/Desktop/MACHINE LEARNING/9 capstone_project/codigo/forex2017_top5.txt',
+main('C:/Users/diego/Desktop/Machine-Learning-Nano/9 capstone_project/codigo/forex2017_top5.txt',
      dollarstoinv=100, USreserve=200, USDwealth=1000, min_gain=1, qlearn=1, alpha=0.5)
 
 np.save('C:/Users/Diego/Desktop/Q', Q)
 Q2 = np.load('C:/Users/Diego/Desktop/Q.npy').item()
 
 import pandas as pd
-balance = pd.read_table('C:/Users/Diego/Desktop/MACHINE LEARNING/9 capstone_project/codigo/balance_nolearn.txt', sep=' ')
+balance = pd.read_table('C:/Users/diego/Desktop/Machine-Learning-Nano/9 capstone_project/LOGS/balance_nolearn.txt', sep=' ')
 
 import matplotlib.pyplot as plt
 plt.plot(balance.time,balance.USD_net)
@@ -545,4 +545,4 @@ plt.plot(forex.order,forex.EURUSD_ask)
 #state_action_hist[state_action_hist.action=='sellGBPUSD'].iloc[0]
 
 import pandas as pd
-balance = pd.read_table('C:/Users/Diego/Desktop/MACHINE LEARNING/9 capstone_project/codigo/balance_nolearn.txt', sep=' ')
+balance = pd.read_table('C:/Users/diego/Desktop/Machine-Learning-Nano/9 capstone_project/LOGS/balance_nolearn.txt', sep=' ')
