@@ -9,8 +9,8 @@ def load_data(path):
     import pandas as pd    
     global forex, forex_toy
     forex = pd.read_table(path, sep=';')
-    forex_toy=forex[(forex.order<=205396)]    
-    ##forex_toy=forex[(forex.order<=2000)]    
+    forex_training = forex[(forex.order <= 92571)] 
+    forex_testing = forex[(forex.order > 92571)] 
     return 
 
 def balance_insert(timew, USDw, GLw, GLnrw, USDwnet):
@@ -192,21 +192,21 @@ def states(qlearn):
     
         #We save 24 hours of historic prices in order to define some variables for the state
         EURUSD_append = pd.DataFrame({'EURUSD_ask':[EURUSD_ask]})
-        if len(EURUSD_hist)<=360:
+        if len(EURUSD_hist)<=minutes_history:
             EURUSD_hist = EURUSD_hist.append(EURUSD_append, ignore_index=True)
-        if len(EURUSD_hist)>360:
+        if len(EURUSD_hist)>minutes_history:
             EURUSD_hist = EURUSD_hist.ix[1:]
             EURUSD_hist = EURUSD_hist.append(EURUSD_append, ignore_index=True)
         AUDUSD_append = pd.DataFrame({'AUDUSD_ask':[AUDUSD_ask]})
-        if len(AUDUSD_hist)<=360:
+        if len(AUDUSD_hist)<=minutes_history:
             AUDUSD_hist = AUDUSD_hist.append(AUDUSD_append, ignore_index=True)
-        if len(AUDUSD_hist)>360:
+        if len(AUDUSD_hist)>minutes_history:
             AUDUSD_hist = AUDUSD_hist.ix[1:]
             AUDUSD_hist = AUDUSD_hist.append(AUDUSD_append, ignore_index=True)
         GBPUSD_append = pd.DataFrame({'GBPUSD_ask':[GBPUSD_ask]})
-        if len(GBPUSD_hist)<=360:
+        if len(GBPUSD_hist)<=minutes_history:
             GBPUSD_hist = GBPUSD_hist.append(GBPUSD_append, ignore_index=True)
-        if len(GBPUSD_hist)>360:
+        if len(GBPUSD_hist)>minutes_history:
             GBPUSD_hist = GBPUSD_hist.ix[1:]
             GBPUSD_hist = GBPUSD_hist.append(GBPUSD_append, ignore_index=True)
                   
@@ -302,9 +302,9 @@ def update_q(alpha, state, action, reward):
 def state_action_history():
     global state_action_hist    
     state_action_append = pd.DataFrame({'state':[state], 'action':[actual_action], 'price':[tx_price], 'EURUSDa':[EURUSD_ask], 'AUDUSDa':[AUDUSD_ask], 'GBPUSDa':[GBPUSD_ask], 'EURUSDb':[EURUSD_bid], 'AUDUSDb':[AUDUSD_bid], 'GBPUSDb':[GBPUSD_bid]})
-    if len(state_action_hist)<=360:
+    if len(state_action_hist)<=minutes_history:
         state_action_hist = state_action_hist.append(state_action_append, ignore_index=True)
-    if len(GBPUSD_hist)>360:
+    if len(GBPUSD_hist)>minutes_history:
         state_action_hist = state_action_hist.ix[1:]
         state_action_hist = state_action_hist.append(state_action_append, ignore_index=True)
     return
@@ -312,7 +312,7 @@ def state_action_history():
 def update_reward(alpha, qlearn):
     global reward, state_reward, action_reward
     if qlearn==1:
-        if len(state_action_hist)>=360:
+        if len(state_action_hist)>=minutes_history:
             action_reward = state_action_hist.at[0, 'action']
             state_reward = state_action_hist.at[0, 'state']
             price_orig = state_action_hist.at[0, 'price']
@@ -463,7 +463,7 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
     ## We finish the initialization
     
     ## Lets start gambling!!!!
-    for index, row in forex_toy.iterrows():
+    for index, row in forex.iterrows():
         
         global AUDUSD_bid, AUDUSD_ask, EURUSD_bid, EURUSD_ask, GBPUSD_bid, GBPUSD_ask, USDJPY_bid, USDJPY_ask, epsilon, actual_action, actions_list, assets
         
@@ -541,18 +541,157 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
     return
 
 
-main('U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/forex2017_top5.txt',
-     dollarstoinv=100, USreserve=200, USDwealth=1000, min_gain=1, qlearn=1, alpha=0.5)
+def train(data_path, save_Q_path, history, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha):
+    
+    global sm, random, pd, np, Q, balance, open_positions, datetime_table, max_EURUSD, max_GBPUSD, max_AUDUSD, min_EURUSD, min_AUDUSD, min_GBPUSD, EURUSD_hist, AUDUSD_hist, GBPUSD_hist, state_action_hist, price, units
+    
+    import pandas as pd
+    import numpy as np
+    import statsmodels.formula.api as sm
+    
+    import random
+    random.seed(12345)
 
-np.save('C:/Users/Diego/Desktop/Q', Q)
-Q2 = np.load('C:/Users/Diego/Desktop/Q.npy').item()
+    load_data(data_path)
+    
+    ## Next we are going to initialize some of the objects that we will use later
+    
+    Q = dict() #This is the Q function
+    
+    open_positions = pd.DataFrame(columns=['position', 'units', 'price']) #The table that has all open positions
+    
+    EURUSD_hist = pd.DataFrame(columns=['EURUSD_ask']) #The history of EURUSD prices
+    AUDUSD_hist = pd.DataFrame(columns=['AUDUSD_ask']) #The history of AUDUSD prices
+    GBPUSD_hist = pd.DataFrame(columns=['GBPUSD_ask']) #The history of GBPUSD prices
+    
+    state_action_hist = pd.DataFrame(columns=['state', 'action', 'price', 'EURUSDa', 'AUDUSDa', 'GBPUSDa', 'EURUSDb', 'AUDUSDb', 'GBPUSDb']) #The history of previous states, actions and prices 
+    
+    balance = pd.DataFrame(columns=['time','USD', 'Gain/Loss_real', 'Gain/Loss_nreal', 'USD_net' ]) #How much money have we earned??
+    balance_insert(timew = 0, USDw = USDwealth, GLw = 0, GLnrw = 0, USDwnet = USDwealth) ## This function inserts new lines into the balance table
+    
+    datetime_table = pd.DataFrame(columns=['indexx', 'datetime']) #This table is useful only if you want to keep track of the mapping of each iteration index and the datetime associated to it
+    datetime_insert(timew = 0, datetimew = '20170101 0000')  #This function inserts new lines into the previous table
+    
+    max_EURUSD=0
+    max_GBPUSD=0
+    max_AUDUSD=0
+    min_EURUSD=999999
+    min_AUDUSD=999999
+    min_GBPUSD=999999
+    
+    ## We finish the initialization
+    
+    ## Lets start gambling!!!!
+    for index, row in forex_train.iterrows():
+        
+        global AUDUSD_bid, AUDUSD_ask, EURUSD_bid, EURUSD_ask, GBPUSD_bid, GBPUSD_ask, USDJPY_bid, USDJPY_ask, epsilon, actual_action, actions_list, assets
+        
+        epsilon = 0.99995**(index+1) ##Exploration factor
+        
+        # We start reading the prices
+        datetime=row['datetime']
+        AUDUSD_bid=row['AUDUSD_bid']
+        AUDUSD_ask=row['AUDUSD_ask']
+        EURUSD_bid=row['EURUSD_bid']
+        EURUSD_ask=row['EURUSD_ask']
+        GBPUSD_bid=row['GBPUSD_bid']
+        GBPUSD_ask=row['GBPUSD_ask']
+        USDJPY_bid=row['USDJPY_bid']
+        USDJPY_ask=row['USDJPY_ask']
+        
+        # We define current state       
+        states(qlearn)
+        
+        # If the state does not exist in the qlearning function we add it
+        qlearning()
+        
+        # We insert a new lines into the datetime_table table
+        datetime_insert(timew = index+1, datetimew = datetime)
+        
+        # We identify the valid actions at the current state
+        # To do nothing is always an option
+        # For example, if the leverage is to high we can not buy new positions
+        valid_actions(time=index, USDreserve=USreserve, wealth=balance.at[index,'USD'])
+       
+        # We update the rewards of previous actions in the Qlearning function 
+        # We wait 24 hours in order to see if an action was "good" or "bad"
+        update_reward(alpha, qlearn)
+        
+        # Now we choose an action
+        # If by selling a position we gain at least min_gain then we sell it
+        # If we dont sell and if we are not learning then a random action is taken
+        # If we dont sell and if we are learning then the action that maximize q is taken
+        choose_action(learn=qlearn, min_gain=min_gain)
+        
+        # Now we have to decide how many units to buy or to sell
+        # 
+        howmuchtoinvest(dollarstoinvest=dollarstoinv, action=actual_action)
+        
+        balance_update(index, actual_action, units)
+        
+        if index%500 == 0:
+            print index
+            print "ASSETS: ", int(assets)
+            print "Balance is: ", int(balance.at[index+1,'USD_net'])
+            print " "
+
+        state_action_history()
+        
+    # When the training finishes we print the balance evolution
+    import matplotlib.pyplot as plt
+    %matplotlib inline
+    plt.plot(balance.time,balance.USD_net)
+    
+    table_file = open('U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/Q.txt', 'w') #usar wb si no funciona w
+    f = table_file
+    f.write("/-----------------------------------------\n")
+    f.write("| State-action rewards from Q-Learning\n")
+    f.write("\-----------------------------------------\n\n")
+    for state in Q:
+        f.write("{}\n".format(state))
+        for action, reward in Q[state].items():
+            f.write(" -- {} : {:.2f}\n".format(action, reward))
+            f.write("\n")
+    table_file.close()
+    
+    #Finally, we save the Q for using the same Q in testing
+    np.save(save_Q_path, Q)    
+    return
+
+
+
+train(data_path = 'U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/forex2017_top5.txt',
+      save_Q_path = 'U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/Q',
+      minutes_history = 360,
+      dollarstoinv = 100, 
+      USreserve = 200, 
+      USDwealth = 1000, 
+      min_gain = 1, 
+      qlearn = 1, 
+      alpha = 0.5)
+
+
+
+
+
+
+
+
+
+
+balance.to_csv(r'U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/balance_qlearn.txt', header=True, index=True, sep=' ')        
+
+## particionar entre training y testing
+## enero, febrero y marzo training hasta order = 92571 (incluido)
+## abril, mayo y junio testing desde order > 92571
+
+np.save('U:/Users/dcaramu/Desktop/Q', Q)
+Q3 = np.load('U:/Users/dcaramu/Desktop/Q.npy').item()
 
 import pandas as pd
 balance = pd.read_table('C:/Users/Diego/Desktop/MACHINE LEARNING/9 capstone_project/codigo/balance_nolearn.txt', sep=' ')
 
-import matplotlib.pyplot as plt
-%matplotlib inline
-plt.plot(balance.time,balance.USD_net)
+
 
 plt.plot(forex.order,forex.EURUSD_ask)
 #plt.plot(pd.to_datetime(datetime_table.datetime, format='%Y%m%d %H%M'),balance.USD)
