@@ -414,7 +414,7 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
     import statsmodels.formula.api as sm
     
     import random
-    random.seed(12345)
+    random.seed(111)
 
     load_data(data_path)
     
@@ -498,7 +498,7 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
         balance_update(index, actual_action, units)
         
         if index%200 == 0:
-            balance.to_csv(r'C:/Users/Diego/Desktop/MACHINE LEARNING/9 capstone_project/codigo/balance_nolearn.txt', header=True, index=True, sep=' ')
+            balance.to_csv(r'C:/Users/diego/Desktop/Machine-Learning-Nano/9 capstone_project/LOGS/balance_nolearn.txt', header=True, index=True, sep=' ')
             
         print "balance is: ", int(balance.at[index+1,'USD_net'])
         print " "
@@ -525,7 +525,7 @@ def main(data_path, dollarstoinv, USreserve, USDwealth, min_gain, qlearn, alpha)
 
 
 main('C:/Users/diego/Desktop/Machine-Learning-Nano/9 capstone_project/codigo/forex2017_top5.txt',
-     dollarstoinv=100, USreserve=200, USDwealth=1000, min_gain=1, qlearn=1, alpha=0.5)
+     dollarstoinv=100, USreserve=200, USDwealth=1000, min_gain=1, qlearn=0, alpha=0.5)
 
 np.save('C:/Users/Diego/Desktop/Q', Q)
 Q2 = np.load('C:/Users/Diego/Desktop/Q.npy').item()
