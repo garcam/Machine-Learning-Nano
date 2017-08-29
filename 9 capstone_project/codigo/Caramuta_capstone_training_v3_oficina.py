@@ -61,7 +61,7 @@ def valid_actions(time, USDreserve, wealth):
     for index, row in open_positions[open_positions.position == 'GBPUSDbuy'].iterrows():
         assets += GBPUSD_bid * row['units']
     
-    if balance.at[time,'USD_net']>USDreserve and assets <= 25 * wealth:
+    if balance.at[time,'USD_net']>USDreserve and assets <= 10 * wealth:
         actions_list.append('buyAUDUSD')
         actions_list.append('buyEURUSD')
         actions_list.append('buyGBPUSD')
@@ -356,9 +356,9 @@ def update_reward(alpha, qlearn, minutes_history):
                     reward=-1
                 if len(state_action_hist[state_action_hist.action=='sellEURUSD'])>0:
                     if state_action_hist[state_action_hist.action=='sellEURUSD']['price'].iloc[0] > price_orig:
-                        reward=3
+                        reward=2
                         if ( (state_action_hist[state_action_hist.action=='sellEURUSD']['price'].iloc[0] - price_orig) > (state_action_hist[state_action_hist.action=='sellEURUSD']['AUDUSDb'].iloc[0] - AUDUSD_orig) ) and ( (state_action_hist[state_action_hist.action=='sellEURUSD']['price'].iloc[0] - price_orig) > (state_action_hist[state_action_hist.action=='sellEURUSD']['GBPUSDb'].iloc[0] - GBPUSD_orig) ):
-                            reward=5
+                            reward=3
                     if state_action_hist[state_action_hist.action=='sellEURUSD']['price'].iloc[0] == price_orig:
                         reward=0
                     if state_action_hist[state_action_hist.action=='sellEURUSD']['price'].iloc[0] < price_orig:
@@ -369,9 +369,9 @@ def update_reward(alpha, qlearn, minutes_history):
                     reward=-1
                 if len(state_action_hist[state_action_hist.action=='sellAUDUSD'])>0:
                     if state_action_hist[state_action_hist.action=='sellAUDUSD']['price'].iloc[0] > price_orig:
-                        reward=3
+                        reward=2
                         if ( (state_action_hist[state_action_hist.action=='sellAUDUSD']['price'].iloc[0] - price_orig) > (state_action_hist[state_action_hist.action=='sellAUDUSD']['EURUSDb'].iloc[0] - EURUSD_orig) ) and ( (state_action_hist[state_action_hist.action=='sellAUDUSD']['price'].iloc[0] - price_orig) > (state_action_hist[state_action_hist.action=='sellAUDUSD']['GBPUSDb'].iloc[0] - GBPUSD_orig) ):
-                            reward=5
+                            reward=3
                     if state_action_hist[state_action_hist.action=='sellAUDUSD']['price'].iloc[0] == price_orig:
                         reward=0
                     if state_action_hist[state_action_hist.action=='sellAUDUSD']['price'].iloc[0] < price_orig:
@@ -382,9 +382,9 @@ def update_reward(alpha, qlearn, minutes_history):
                     reward=-1
                 if len(state_action_hist[state_action_hist.action=='sellGBPUSD'])>0:
                     if state_action_hist[state_action_hist.action=='sellGBPUSD']['price'].iloc[0] > price_orig:
-                        reward=3
+                        reward=2
                         if ( (state_action_hist[state_action_hist.action=='sellGBPUSD']['price'].iloc[0] - price_orig) > (state_action_hist[state_action_hist.action=='sellGBPUSD']['EURUSDb'].iloc[0] - EURUSD_orig) ) and ( (state_action_hist[state_action_hist.action=='sellGBPUSD']['price'].iloc[0] - price_orig) > (state_action_hist[state_action_hist.action=='sellGBPUSD']['AUDUSDb'].iloc[0] - AUDUSD_orig) ):
-                            reward=5
+                            reward=3
                     if state_action_hist[state_action_hist.action=='sellGBPUSD']['price'].iloc[0] == price_orig:
                         reward=0
                     if state_action_hist[state_action_hist.action=='sellGBPUSD']['price'].iloc[0] < price_orig:
@@ -569,10 +569,10 @@ def train(data_path, save_Q_path, save_Q_path2, minutes_history, dollarstoinv, U
 train(data_path = 'U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/forex2017_top5.txt',
       save_Q_path = 'U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/LOGS/Q',
       save_Q_path2 = 'U:/Users/dcaramu/Desktop/Machine-Learning-Nano-NEW/9 capstone_project/codigo/LOGS/Q.txt',
-      minutes_history = 120,
+      minutes_history = 360,
       dollarstoinv = 100, 
       USreserve = 200, 
       USDwealth = 1000, 
-      min_gain = 1, 
+      min_gain = 0.1, 
       qlearn = 1, 
       alpha = 0.5)
