@@ -2,1195 +2,160 @@
 | State-action rewards from Q-Learning
 \-----------------------------------------
 
-(1, -1, 1, -2, 1, -2)
+(1, 1, 1, -1, 1, -1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : 1.64
+ -- buyGBPUSD : -0.78
+
+ -- buyEURUSD : -0.97
+
+ -- buyAUDUSD : 0.25
+
+(-1, 0, -1, -1, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
 
  -- buyEURUSD : 1.50
 
- -- buyAUDUSD : 0.00
+ -- buyAUDUSD : -0.50
 
-(1, -1, -1, 1, 1, 1)
+(1, 0, 1, -1, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 4.99
+
+ -- buyAUDUSD : -1.00
+
+(1, -2, -1, -2, 1, -2, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
 
  -- buyEURUSD : 0.00
 
- -- buyAUDUSD : 0.00
+ -- buyAUDUSD : -0.50
 
-(1, 1, 1, 1, 1, -1)
+(-1, -1, -1, -1, -1, 1, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.75
 
  -- buyEURUSD : -0.88
 
- -- buyAUDUSD : -0.09
+ -- buyAUDUSD : 4.99
 
-(1, 1, -1, 0, 1, -1)
+(1, 0, 1, 0, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.91
+
+ -- buyEURUSD : 2.87
+
+ -- buyAUDUSD : 2.52
+
+(1, 0, 1, -2, 1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
 
- -- buyEURUSD : 0.00
+ -- buyEURUSD : 2.50
 
  -- buyAUDUSD : 0.00
 
-(1, -2, 1, -2, 1, -1)
+(1, -2, 1, 0, 1, -1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : 0.85
-
- -- buyEURUSD : 0.73
-
- -- buyAUDUSD : -0.44
-
-(1, -1, 1, -1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.98
-
- -- buyEURUSD : 0.75
-
- -- buyAUDUSD : -0.75
-
-(-1, 0, -1, -1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.81
-
- -- buyEURUSD : 0.50
-
- -- buyAUDUSD : -1.00
-
-(-1, 1, -1, 2, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.88
-
- -- buyAUDUSD : 2.62
-
-(-1, 2, 1, 0, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, -1, -1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, -1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.26
-
- -- buyEURUSD : -0.62
-
- -- buyAUDUSD : 1.31
-
-(1, 1, 1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.94
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : -1.00
-
-(-1, 1, -1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.75
-
-(1, -1, -1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : -0.43
-
-(-1, 0, 1, -1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, -1, 1, 0, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.75
-
-(-1, 2, -1, 2, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.25
-
- -- buyEURUSD : 2.25
-
- -- buyAUDUSD : 0.00
-
-(1, 0, -1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : 2.00
-
- -- buyAUDUSD : 2.72
-
-(-1, 1, -1, 2, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, -1, 2, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.94
-
- -- buyEURUSD : -0.88
-
- -- buyAUDUSD : 2.25
-
-(-1, 2, 1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, 1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, -1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : -0.50
-
-(-1, -1, -1, 0, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, -1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.12
-
- -- buyEURUSD : 0.95
-
- -- buyAUDUSD : 0.50
-
-(1, -2, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.62
-
- -- buyEURUSD : -0.81
-
- -- buyAUDUSD : -0.88
-
-(1, -1, -1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : -0.99
-
- -- buyAUDUSD : -0.99
-
-(1, -1, -1, -1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, 1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.99
-
- -- buyAUDUSD : -0.68
-
-(-1, -1, -1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.44
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : 2.00
-
-(1, 0, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.00
-
- -- buyEURUSD : -0.13
-
- -- buyAUDUSD : 1.72
-
-(1, -1, 1, -1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.00
-
-(1, 0, 1, 0, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.25
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.50
-
-(-1, 1, -1, 2, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, 1, -2, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 2, 1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.50
-
-(-1, -1, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.98
-
- -- buyEURUSD : -0.94
-
- -- buyAUDUSD : -0.94
-
-(1, -2, 1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : -0.50
-
-(1, 0, 1, 1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : 1.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, -1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.88
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.97
-
-(1, -1, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : 1.88
-
- -- buyAUDUSD : 2.03
-
-(-1, -1, 1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 2, -1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.98
-
-(1, 0, -1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.97
-
-(1, -2, 1, 0, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, -1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.99
-
- -- buyAUDUSD : -0.50
-
-(-1, -1, -1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 2.50
-
-(-1, 0, 1, -2, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, -1, -1, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.75
-
- -- buyEURUSD : 0.16
-
- -- buyAUDUSD : -1.00
-
-(-1, -2, 1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, -1, 2, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.50
-
-(1, 0, 1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.75
-
-(-1, 1, -1, 0, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.41
-
- -- buyEURUSD : 2.01
-
- -- buyAUDUSD : -0.94
-
-(1, -1, 1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 1.50
-
-(-1, -1, 1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.50
-
-(1, -1, -1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.72
-
- -- buyEURUSD : 2.94
-
- -- buyAUDUSD : -1.00
-
-(1, 1, 1, 0, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.56
-
- -- buyEURUSD : 0.66
-
- -- buyAUDUSD : 0.48
-
-(-1, 1, -1, 1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -0.94
-
- -- buyAUDUSD : 1.56
-
-(-1, 2, -1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.97
-
- -- buyEURUSD : -0.94
-
- -- buyAUDUSD : 2.98
-
-(1, -2, 1, -1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.25
-
- -- buyEURUSD : -0.38
-
- -- buyAUDUSD : 1.50
-
-(-1, 0, 1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.87
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.81
-
-(1, -1, 1, -1, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : -0.88
-
- -- buyAUDUSD : 2.00
-
-(1, -2, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.62
+ -- buyGBPUSD : 2.50
 
  -- buyEURUSD : 1.50
 
  -- buyAUDUSD : 0.00
 
-(-1, 0, -1, -1, 1, 0)
+(1, -1, -1, 1, -1, 0, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : 2.99
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : 2.00
-
-(1, -1, 1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.83
-
-(-1, 0, -1, 0, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.98
-
- -- buyEURUSD : -0.94
-
- -- buyAUDUSD : 1.75
-
-(-1, -1, 1, -2, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, -1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.81
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 1.88
-
-(1, -2, 1, -2, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : 0.00
-
-(-1, 2, -1, 1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, -2, -1, -2, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.50
-
-(-1, 0, 1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.94
-
- -- buyEURUSD : 1.75
-
- -- buyAUDUSD : 1.88
-
-(-1, 2, -1, 0, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, 1, -2, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, -1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.94
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 1.25
-
-(-1, 1, -1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.97
-
- -- buyEURUSD : -0.69
-
- -- buyAUDUSD : -0.69
-
-(1, -1, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.12
-
- -- buyEURUSD : 3.00
-
- -- buyAUDUSD : -0.25
-
-(-1, -1, -1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.59
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 2.00
-
-(-1, 1, 1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.33
-
-(-1, 1, -1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : -0.38
-
- -- buyAUDUSD : -1.00
-
-(1, 1, -1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : -0.50
-
-(-1, -1, -1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.50
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : 2.62
-
-(1, -1, 1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.88
-
- -- buyEURUSD : -0.84
-
- -- buyAUDUSD : -0.98
-
-(-1, 0, -1, 1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.12
-
- -- buyEURUSD : -0.51
-
- -- buyAUDUSD : -0.31
-
-(-1, -1, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 3.00
-
- -- buyEURUSD : -0.48
-
- -- buyAUDUSD : 1.88
-
-(-1, 1, -1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 3.00
+ -- buyGBPUSD : 1.63
 
  -- buyEURUSD : -0.98
 
- -- buyAUDUSD : 1.01
+ -- buyAUDUSD : 2.03
 
-(-1, -1, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.81
-
-(1, -1, 1, -2, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.66
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, -1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.94
-
-(1, -1, -1, -2, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.87
-
- -- buyEURUSD : -0.78
-
- -- buyAUDUSD : 0.51
-
-(1, 1, 1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.97
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : -0.94
-
-(-1, 0, -1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 2.74
-
-(1, -1, 1, 0, 1, 0)
+(-1, -1, -1, 0, -1, 1, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : -1.00
 
- -- buyEURUSD : -0.83
-
- -- buyAUDUSD : -0.99
-
-(1, 0, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.91
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 2.89
-
-(1, 0, 1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.00
-
- -- buyEURUSD : 0.62
-
- -- buyAUDUSD : 2.38
-
-(1, 0, 1, 2, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.00
-
- -- buyEURUSD : -0.95
-
- -- buyAUDUSD : 2.84
-
-(1, 0, -1, 1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -2, -1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.30
-
- -- buyAUDUSD : 2.50
-
-(-1, -1, -1, 0, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.50
-
-(-1, 0, -1, 0, 1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, 1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, 1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.01
-
- -- buyEURUSD : -0.27
-
- -- buyAUDUSD : -1.00
-
-(-1, 2, -1, 2, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(1, 1, 1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.99
-
- -- buyEURUSD : 1.62
-
- -- buyAUDUSD : 2.00
-
-(-1, 2, -1, 2, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : -1.00
+ -- buyEURUSD : 3.53
 
  -- buyAUDUSD : 3.00
 
-(1, -1, -1, -1, 1, -1)
+(1, 0, -1, 0, 1, -1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.97
+ -- buyGBPUSD : 5.00
 
- -- buyEURUSD : -0.25
+ -- buyEURUSD : -0.63
 
- -- buyAUDUSD : -1.00
+ -- buyAUDUSD : 3.51
 
-(-1, 1, -1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 1.20
-
- -- buyAUDUSD : 0.75
-
-(1, 0, 1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.77
-
- -- buyEURUSD : 2.03
-
- -- buyAUDUSD : -0.97
-
-(1, 0, 1, -1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.00
-
- -- buyAUDUSD : 1.50
-
-(1, 0, -1, 1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 2.25
-
- -- buyAUDUSD : 1.50
-
-(-1, 0, -1, 2, 1, 0)
+(1, 1, 1, -1, -1, 1, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.75
 
- -- buyEURUSD : -0.75
+ -- buyEURUSD : 2.25
 
  -- buyAUDUSD : 0.00
 
-(1, 1, -1, 0, -1, 0)
+(1, -1, -1, 1, 1, -1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.88
+ -- buyGBPUSD : 2.00
 
- -- buyEURUSD : -0.50
+ -- buyEURUSD : -0.75
 
  -- buyAUDUSD : -0.94
 
-(-1, 1, -1, -1, -1, 0)
+(-1, -1, -1, 1, 1, -1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -1.00
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 3.19
+
+(1, -1, -1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.86
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 2.00
+
+(-1, 1, 1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.63
 
  -- buyEURUSD : -1.00
 
  -- buyAUDUSD : -0.91
 
-(1, -1, 1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 1.50
-
-(-1, -1, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.70
-
- -- buyEURUSD : -0.80
-
- -- buyAUDUSD : 2.94
-
-(-1, 2, -1, 2, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.35
-
- -- buyEURUSD : -0.23
-
- -- buyAUDUSD : -0.01
-
-(1, 1, 1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.95
-
- -- buyAUDUSD : -0.57
-
-(1, 1, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.97
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : 1.00
-
-(1, -1, 1, -2, -1, 1)
+(-1, -1, -1, 0, -1, -1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -1199,7 +164,7 @@
 
  -- buyAUDUSD : 0.00
 
-(1, -2, 1, -2, -1, 0)
+(-1, -1, -1, 0, -1, 2, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -1208,367 +173,52 @@
 
  -- buyAUDUSD : -0.50
 
-(1, -2, 1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : 1.00
-
-(1, -2, 1, -2, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.25
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : 2.00
-
-(1, -1, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.04
-
- -- buyEURUSD : -0.99
-
- -- buyAUDUSD : 0.17
-
-(-1, 1, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.00
-
-(-1, -1, -1, -2, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.02
-
- -- buyEURUSD : 1.75
-
- -- buyAUDUSD : 3.00
-
-(1, 0, -1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.82
-
- -- buyEURUSD : 1.88
-
- -- buyAUDUSD : 2.87
-
-(-1, 0, -1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 3.00
-
- -- buyEURUSD : 0.72
-
- -- buyAUDUSD : -0.94
-
-(-1, 2, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : -0.88
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, -1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.25
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 2.49
-
-(1, -1, -1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.99
-
- -- buyEURUSD : 1.81
-
- -- buyAUDUSD : -0.30
-
-(-1, 1, 1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 1.31
-
- -- buyAUDUSD : 2.00
-
-(1, -1, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.98
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 2.99
-
-(1, 1, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.98
-
- -- buyEURUSD : -0.97
-
- -- buyAUDUSD : 2.25
-
-(1, -1, 1, -1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.74
-
- -- buyEURUSD : 1.12
-
- -- buyAUDUSD : 1.10
-
-(1, 0, -1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.97
-
- -- buyEURUSD : -0.13
-
- -- buyAUDUSD : 1.00
-
-(1, 0, 1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 2.00
-
- -- buyAUDUSD : 1.74
-
-(-1, 2, 1, 2, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, -1, 1, 1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.75
-
- -- buyEURUSD : 1.01
-
- -- buyAUDUSD : 2.50
-
-(-1, 1, -1, 1, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, -1, -1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.75
-
- -- buyEURUSD : 2.50
-
- -- buyAUDUSD : 2.00
-
-(-1, 0, 1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.99
-
- -- buyEURUSD : -0.09
-
- -- buyAUDUSD : -1.00
-
-(-1, 0, -1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 0.95
-
-(1, 0, -1, 0, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.25
-
- -- buyEURUSD : 2.93
-
- -- buyAUDUSD : 0.00
-
-(-1, 2, -1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(1, -2, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, -1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.95
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -1.00
-
-(-1, 0, -1, -1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.00
-
- -- buyAUDUSD : -0.88
-
-(-1, 1, -1, 0, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.98
-
- -- buyEURUSD : -0.62
-
- -- buyAUDUSD : 0.31
-
-(1, -2, 1, -2, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, -1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 0, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, 0, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.83
-
- -- buyAUDUSD : 2.75
-
-(1, -1, -1, 0, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.38
-
- -- buyEURUSD : 2.46
-
- -- buyAUDUSD : 1.75
-
-(1, 1, 1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.50
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : -0.50
-
-(1, 1, -1, 1, -1, 0)
+(-1, 0, 1, 1, 1, 0, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.59
 
- -- buyEURUSD : 0.75
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.50
+
+(-1, 2, -1, 0, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 1, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.00
+
+ -- buyEURUSD : -0.00
+
+ -- buyAUDUSD : 2.50
+
+(-1, 0, -1, 1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.65
+
+ -- buyEURUSD : -1.00
 
  -- buyAUDUSD : -1.00
 
-(-1, 0, -1, 0, -1, -1)
+(1, 0, 1, 0, 1, -1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : 1.00
+ -- buyGBPUSD : 3.50
 
- -- buyEURUSD : -0.81
+ -- buyEURUSD : 4.52
 
- -- buyAUDUSD : -0.44
+ -- buyAUDUSD : -1.00
 
-(1, -1, 1, 1, 1, 1)
+(1, -2, 1, -1, -1, -1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -1577,574 +227,1987 @@
 
  -- buyAUDUSD : 0.00
 
-(-1, 1, 1, 0, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.00
-
- -- buyAUDUSD : 1.00
-
-(-1, 1, -1, 0, -1, 2)
+(-1, 1, -1, 1, -1, 2, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
 
  -- buyEURUSD : -0.94
 
- -- buyAUDUSD : 2.25
+ -- buyAUDUSD : -0.75
 
-(1, 1, 1, 0, -1, 0)
+(-1, -1, -1, 1, -1, 1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : 2.25
+ -- buyGBPUSD : 2.50
 
- -- buyEURUSD : 0.25
+ -- buyEURUSD : 0.00
 
- -- buyAUDUSD : 1.88
+ -- buyAUDUSD : 0.00
 
-(1, -1, -1, 0, -1, -1)
+(1, 0, -1, 1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.81
+
+ -- buyEURUSD : 3.50
+
+ -- buyAUDUSD : -0.50
+
+(-1, 0, -1, 0, 1, 2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, 1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.63
+
+ -- buyEURUSD : -0.94
+
+ -- buyAUDUSD : 3.00
+
+(-1, 1, 1, 0, 1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -1.00
 
- -- buyEURUSD : -0.25
+ -- buyEURUSD : 3.63
 
- -- buyAUDUSD : 0.18
+ -- buyAUDUSD : -0.87
 
-(1, -1, 1, -2, 1, -1)
+(1, 0, 1, -1, 1, -1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : 0.01
+ -- buyGBPUSD : 5.00
 
- -- buyEURUSD : 1.55
+ -- buyEURUSD : 0.50
 
- -- buyAUDUSD : 0.53
+ -- buyAUDUSD : 3.50
 
-(-1, 1, -1, 1, 1, -1)
+(1, 0, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -0.64
+
+(-1, 0, -1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.99
+
+ -- buyEURUSD : 0.38
+
+ -- buyAUDUSD : -0.23
+
+(-1, -1, -1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : -0.94
+
+(1, -1, 1, -2, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.78
+
+ -- buyEURUSD : 1.12
+
+ -- buyAUDUSD : 1.16
+
+(-1, 0, -1, -1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.19
+
+ -- buyEURUSD : 3.62
+
+ -- buyAUDUSD : 2.25
+
+(-1, 0, -1, -2, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 0, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 1.00
+
+ -- buyAUDUSD : 3.50
+
+(1, 1, -1, 1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 1.00
+
+ -- buyAUDUSD : -0.98
+
+(-1, 0, -1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : -0.15
+
+ -- buyAUDUSD : -0.83
+
+(1, 0, 1, 0, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : 2.00
+
+ -- buyAUDUSD : -0.59
+
+(1, 1, -1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, 1, -1, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.52
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 5.00
+
+(1, 0, 1, -1, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 2.25
+
+(-1, 2, 1, 0, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 1.42
+
+ -- buyAUDUSD : -0.98
+
+(-1, 2, -1, 1, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, -1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.09
+
+ -- buyEURUSD : 3.91
+
+ -- buyAUDUSD : 1.50
+
+(-1, -1, 1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : -0.95
+
+ -- buyAUDUSD : -0.44
+
+(-1, 0, -1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.07
+
+ -- buyEURUSD : 1.66
+
+ -- buyAUDUSD : -0.94
+
+(1, 0, 1, 0, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.51
+
+ -- buyEURUSD : -0.01
+
+ -- buyAUDUSD : -0.97
+
+(-1, 1, 1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.98
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.50
+
+(1, 0, -1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(1, 1, 1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 5.00
+
+(-1, -1, -1, -1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.75
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.99
+
+ -- buyAUDUSD : 2.80
+
+(1, -2, 1, -2, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.50
+
+(-1, 0, -1, 2, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, -1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.30
+
+ -- buyEURUSD : 4.28
+
+ -- buyAUDUSD : 3.12
+
+(-1, 0, -1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.06
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 2.51
+
+(1, 0, -1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.75
+
+ -- buyEURUSD : 1.99
+
+ -- buyAUDUSD : 2.25
+
+(-1, 1, -1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.89
+
+ -- buyEURUSD : 0.37
+
+ -- buyAUDUSD : -1.00
+
+(1, 0, -1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.50
+
+(-1, 0, 1, -2, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 0, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.11
+
+ -- buyEURUSD : 3.87
+
+ -- buyAUDUSD : 3.00
+
+(-1, -1, -1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.51
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.26
+
+(-1, 1, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.19
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : -1.00
+
+(-1, -2, 1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 0, -1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.00
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : -0.94
+
+(-1, 2, -1, 2, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, -1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.67
+
+ -- buyEURUSD : 3.38
+
+ -- buyAUDUSD : -0.98
+
+(1, -1, 1, -2, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 1.50
+
+(-1, -2, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, -1, 1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.02
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.94
+
+(1, -1, 1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.96
+
+ -- buyEURUSD : 0.49
+
+ -- buyAUDUSD : -1.00
+
+(-1, 1, 1, -1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.35
+
+ -- buyEURUSD : -0.39
+
+ -- buyAUDUSD : 1.50
+
+(-1, 0, -1, 0, -1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.56
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : -0.82
+
+(1, -1, 1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : -0.90
+
+ -- buyAUDUSD : -0.93
+
+(1, 0, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 5.00
+
+(1, -1, 1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, 1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.71
+
+ -- buyAUDUSD : -0.62
+
+(1, 0, 1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.08
+
+ -- buyEURUSD : 3.15
+
+ -- buyAUDUSD : -1.00
+
+(1, 0, -1, -1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, -1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.56
+
+ -- buyEURUSD : 1.51
+
+ -- buyAUDUSD : 4.62
+
+(1, 1, -1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 1.00
+
+(1, -1, 1, -1, 1, -2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 3.75
+
+ -- buyAUDUSD : 0.25
+
+(-1, 1, 1, 0, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.90
+
+ -- buyEURUSD : -0.39
+
+ -- buyAUDUSD : -0.75
+
+(-1, 1, -1, 1, -1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.03
+
+ -- buyEURUSD : 3.50
+
+ -- buyAUDUSD : -0.97
+
+(-1, -1, 1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.87
+
+ -- buyAUDUSD : -0.50
+
+(1, 0, 1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : -0.85
+
+ -- buyAUDUSD : 1.32
+
+(-1, 0, -1, -1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.69
+
+ -- buyEURUSD : 2.12
+
+ -- buyAUDUSD : 3.00
+
+(1, 1, 1, 1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.62
+
+ -- buyEURUSD : 4.98
+
+ -- buyAUDUSD : 2.81
+
+(-1, 0, -1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.39
+
+ -- buyEURUSD : 1.38
+
+ -- buyAUDUSD : 3.00
+
+(1, 0, 1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(-1, 0, -1, 0, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.44
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 2.56
+
+(-1, 1, -1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 3.10
+
+ -- buyAUDUSD : 3.25
+
+(1, 1, -1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.94
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : -1.00
+
+(-1, 1, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 3.54
+
+(-1, -1, 1, -1, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 4.69
+
+(1, 1, 1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 2.50
+
+(1, 1, -1, 0, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -2, 1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.75
+
+(-1, -1, -1, 0, -1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : -0.50
+
+(1, 0, 1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.00
+
+ -- buyEURUSD : 2.62
+
+ -- buyAUDUSD : 0.75
+
+(1, 0, -1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.35
+
+ -- buyEURUSD : -0.93
+
+ -- buyAUDUSD : -0.27
+
+(-1, 1, -1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 0.50
+
+ -- buyAUDUSD : 0.50
+
+(1, -2, 1, -2, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, 0, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.21
+
+ -- buyEURUSD : 3.20
+
+ -- buyAUDUSD : 5.00
+
+(-1, -1, -1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.75
+
+(1, 1, -1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.88
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : -0.07
+
+(1, -2, 1, -1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.31
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, 1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.84
+
+ -- buyAUDUSD : 0.00
+
+(-1, 2, 1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, 1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.36
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : -0.95
+
+(1, -1, 1, 0, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : -1.00
+
+(-1, 2, 1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, 1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : 2.01
+
+ -- buyAUDUSD : -1.00
+
+(1, 0, 1, -2, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.88
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, -1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.58
+
+ -- buyEURUSD : -0.95
+
+ -- buyAUDUSD : -1.00
+
+(-1, 1, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.27
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(1, 0, 1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.50
+
+ -- buyEURUSD : 0.65
+
+ -- buyAUDUSD : -0.50
+
+(-1, 0, -1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : 1.00
+
+ -- buyAUDUSD : 5.00
+
+(1, 1, -1, 0, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, -2, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, 1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.62
+
+ -- buyEURUSD : 1.31
+
+ -- buyAUDUSD : -1.00
+
+(1, 1, 1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.88
+
+ -- buyAUDUSD : 4.38
+
+(-1, 1, 1, 1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.99
+
+ -- buyEURUSD : 1.88
+
+ -- buyAUDUSD : -0.50
+
+(1, -2, 1, -2, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, 1, -1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.75
+
+(-1, 1, 1, 0, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.38
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, 1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.61
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(1, 1, -1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : -0.99
+
+(1, -1, -1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 2.00
+
+(1, -1, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 4.25
+
+ -- buyAUDUSD : 2.00
+
+(-1, 0, -1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.62
+
+ -- buyEURUSD : -0.99
+
+ -- buyAUDUSD : 3.53
+
+(1, -2, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : -0.99
+
+ -- buyAUDUSD : -0.99
+
+(-1, -1, -1, 0, -1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.17
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : -0.99
+
+(-1, -1, -1, 0, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.12
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : -0.97
+
+(1, -1, 1, 1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.96
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.88
+
+(-1, 0, 1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.06
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 1.25
+
+(1, 0, 1, 1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.47
+
+ -- buyEURUSD : 1.00
+
+ -- buyAUDUSD : 1.01
+
+(1, -2, 1, -2, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 2.50
+
+(1, -2, 1, -1, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.38
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, 1, 0, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.75
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 2.97
+
+(-1, 1, 1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.00
+
+(1, 1, 1, -1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 1.50
+
+(-1, -1, -1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.95
+
+ -- buyEURUSD : 0.25
+
+ -- buyAUDUSD : 2.25
+
+(1, -1, 1, 1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.87
+
+ -- buyEURUSD : 0.91
+
+ -- buyAUDUSD : 3.81
+
+(-1, 0, -1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 4.89
+
+ -- buyAUDUSD : -0.50
+
+(1, -1, 1, 1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 1.50
+
+(-1, 0, -1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.12
+
+ -- buyEURUSD : 4.99
+
+ -- buyAUDUSD : 2.56
+
+(1, 0, 1, -1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 2.59
+
+(-1, -1, -1, -1, -1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, 1, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : -0.75
+
+(1, 1, -1, 0, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 0.55
+
+(-1, 1, 1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : -0.97
+
+ -- buyAUDUSD : -1.00
+
+(-1, 0, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 2.97
+
+ -- buyAUDUSD : 4.50
+
+(-1, 1, 1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.86
+
+ -- buyEURUSD : -0.98
+
+ -- buyAUDUSD : 3.00
+
+(1, 0, -1, -1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.38
+
+ -- buyEURUSD : -0.19
+
+ -- buyAUDUSD : -0.96
+
+(1, -2, 1, -1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.98
+
+ -- buyEURUSD : 1.19
+
+ -- buyAUDUSD : 0.88
+
+(-1, 2, -1, 2, -1, 2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.27
+
+ -- buyAUDUSD : 2.94
+
+(-1, -1, 1, -2, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : 1.12
+
+ -- buyAUDUSD : -0.25
+
+(1, -1, 1, -2, 1, -2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.31
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(-1, 2, -1, 1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 1.50
+
+(1, 1, 1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.97
+
+ -- buyEURUSD : -0.95
+
+ -- buyAUDUSD : 2.25
+
+(1, 0, 1, 2, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 0, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.75
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 3.03
+
+(1, -1, -1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, -1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, -1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 4.70
+
+(1, 0, 1, -1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : 2.10
+
+ -- buyAUDUSD : 4.25
+
+(1, 0, 1, -2, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : 3.23
+
+ -- buyAUDUSD : -0.75
+
+(-1, 0, -1, 2, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(-1, 1, -1, 2, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, 1, 0, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : -0.50
+
+(1, -1, -1, -2, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, -1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.62
+
+ -- buyEURUSD : 3.75
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, 1, -1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, -1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 3.75
+
+(-1, 0, -1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.09
+
+ -- buyEURUSD : 2.31
+
+ -- buyAUDUSD : 4.99
+
+(1, -1, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : -0.81
+
+ -- buyAUDUSD : 3.50
+
+(-1, 1, 1, -1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 0.00
+
+(-1, 2, -1, 2, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, -1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 2.75
+
+ -- buyAUDUSD : 3.25
+
+(1, -1, -1, -1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : 1.02
+
+ -- buyAUDUSD : 0.02
+
+(-1, 1, -1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 1.90
+
+ -- buyAUDUSD : 1.00
+
+(-1, 2, -1, 1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, -1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 4.41
+
+(1, 0, 1, -2, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.88
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 3.38
+
+(-1, -1, -1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.99
+
+ -- buyEURUSD : 4.92
+
+ -- buyAUDUSD : 4.50
+
+(1, -1, 1, -2, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, -2, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.25
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.38
+
+(1, 0, 1, 1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 2.06
+
+(1, -1, 1, -2, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(1, -1, 1, -2, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.12
+
+ -- buyEURUSD : 2.88
+
+ -- buyAUDUSD : 0.25
+
+(-1, 1, -1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.90
+
+(1, 0, 1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : -0.50
+
+(-1, -2, -1, -2, -1, -2, 0)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 0, -1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, -1, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 4.98
+
+(1, -1, 1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.38
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : -0.50
+
+(-1, 1, -1, 2, -1, 2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.50
+
+(-1, 0, -1, 0, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.67
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : 3.00
+
+(1, 1, -1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.00
+
+ -- buyEURUSD : 1.94
+
+ -- buyAUDUSD : -0.94
+
+(-1, 1, -1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : -0.78
+
+ -- buyAUDUSD : 2.50
+
+(-1, 0, 1, -1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, -1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.98
+
+(1, -1, -1, 0, 1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.12
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : -0.75
+
+(1, -2, 1, -2, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, -1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.38
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, -1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.81
+
+ -- buyEURUSD : 2.00
+
+ -- buyAUDUSD : 2.75
+
+(1, -1, 1, -1, 1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.25
 
  -- buyEURUSD : 2.00
 
+ -- buyAUDUSD : 3.23
+
+(-1, -1, -1, 0, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.50
+
  -- buyAUDUSD : 1.50
 
-(1, -1, -1, -1, -1, 0)
+(1, -1, 1, 0, 1, -2, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.96
+ -- buyGBPUSD : 2.50
 
- -- buyEURUSD : 1.13
-
- -- buyAUDUSD : 2.88
-
-(-1, 1, -1, 1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.89
-
- -- buyEURUSD : 2.00
+ -- buyEURUSD : -0.88
 
  -- buyAUDUSD : -0.75
 
-(1, 0, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.87
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 0.68
-
-(-1, 0, 1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.97
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 0.56
-
-(-1, 0, -1, 1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, -1, 1, -2, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.38
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(1, 1, -1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.93
-
- -- buyEURUSD : 2.00
-
- -- buyAUDUSD : -0.96
-
-(1, -1, -1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.38
-
- -- buyEURUSD : -0.69
-
- -- buyAUDUSD : -0.88
-
-(1, 0, 1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.99
-
- -- buyEURUSD : 1.69
-
- -- buyAUDUSD : 0.67
-
-(-1, 1, -1, 0, -1, 1)
+(1, 0, -1, 0, 1, 0, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : -1.00
 
- -- buyEURUSD : -1.00
+ -- buyEURUSD : -0.91
 
- -- buyAUDUSD : -0.95
+ -- buyAUDUSD : -0.77
 
-(-1, 2, -1, 1, -1, 2)
+(1, 1, 1, 1, 1, 1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : 0.00
+ -- buyGBPUSD : 1.03
 
- -- buyEURUSD : 0.00
+ -- buyEURUSD : 5.00
 
- -- buyAUDUSD : 0.00
+ -- buyAUDUSD : 1.23
 
-(-1, -2, -1, -2, -1, -2)
+(-1, 1, -1, 0, -1, -1, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : 0.00
+ -- buyGBPUSD : -0.06
 
- -- buyEURUSD : 0.00
+ -- buyEURUSD : -0.75
 
- -- buyAUDUSD : 0.00
+ -- buyAUDUSD : -0.09
 
-(1, 0, -1, 0, -1, -1)
+(1, 1, 1, 1, 1, 1, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : -0.97
-
- -- buyAUDUSD : -0.94
-
-(1, -1, -1, -1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 2.00
-
-(-1, 1, 1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.89
-
- -- buyEURUSD : -0.54
-
- -- buyAUDUSD : 3.00
-
-(-1, -1, -1, 1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.97
+ -- buyGBPUSD : 5.00
 
  -- buyEURUSD : -0.50
 
- -- buyAUDUSD : 1.50
+ -- buyAUDUSD : 1.12
 
-(-1, 0, -1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.98
-
- -- buyEURUSD : 2.25
-
- -- buyAUDUSD : 0.51
-
-(-1, 1, 1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.99
-
- -- buyEURUSD : -0.99
-
- -- buyAUDUSD : -0.86
-
-(-1, 2, -1, 2, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : -0.25
-
- -- buyAUDUSD : 3.00
-
-(1, -1, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 2.62
-
- -- buyAUDUSD : 0.13
-
-(1, 1, -1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.43
-
- -- buyEURUSD : 2.00
-
- -- buyAUDUSD : -0.81
-
-(-1, 0, -1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.28
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : -0.81
-
-(1, 0, 1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 3.00
-
- -- buyEURUSD : -0.92
-
- -- buyAUDUSD : -0.25
-
-(-1, 2, 1, 1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.99
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 2.00
-
-(1, -2, 1, -2, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.86
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -1.00
-
-(-1, 1, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.99
-
- -- buyEURUSD : -0.24
-
- -- buyAUDUSD : 1.33
-
-(1, -1, 1, -2, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.50
-
- -- buyEURUSD : 2.38
-
- -- buyAUDUSD : -0.50
-
-(-1, -1, 1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.87
-
- -- buyEURUSD : -0.01
-
- -- buyAUDUSD : 0.60
-
-(-1, 0, -1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.00
-
- -- buyEURUSD : -0.81
-
- -- buyAUDUSD : 2.97
-
-(1, -1, -1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.88
-
- -- buyEURUSD : 0.44
-
- -- buyAUDUSD : 0.81
-
-(1, 1, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 1, -1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, 1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -0.97
-
- -- buyAUDUSD : 2.95
-
-(-1, -1, 1, -1, 1, 0)
+(-1, -1, -1, -1, -1, -1, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : 2.25
 
- -- buyEURUSD : -0.50
+ -- buyEURUSD : 1.50
 
- -- buyAUDUSD : -0.75
+ -- buyAUDUSD : 0.75
 
-(1, -1, 1, -1, 1, 0)
+(1, 0, -1, 0, 1, 1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.96
+ -- buyGBPUSD : 4.63
 
- -- buyEURUSD : -0.95
+ -- buyEURUSD : 2.88
+
+ -- buyAUDUSD : 3.00
+
+(1, 0, -1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.84
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.56
+
+(-1, 0, 1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, -1, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : -0.55
+
+ -- buyAUDUSD : 4.47
+
+(1, -2, 1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.91
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 3.91
+
+(1, -1, 1, 0, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.50
+
+ -- buyEURUSD : 4.01
 
  -- buyAUDUSD : -1.00
 
-(-1, 1, 1, 0, -1, 2)
+(-1, -1, -1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.33
+
+ -- buyEURUSD : 4.02
+
+ -- buyAUDUSD : 1.00
+
+(-1, -1, -1, 0, -1, 1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
 
- -- buyEURUSD : 0.00
+ -- buyEURUSD : -0.38
 
- -- buyAUDUSD : 0.00
+ -- buyAUDUSD : 3.25
 
-(-1, -1, 1, -2, -1, 1)
+(-1, 1, -1, 1, -1, 1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.50
+ -- buyGBPUSD : 1.63
 
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.06
-
- -- buyEURUSD : 2.91
-
- -- buyAUDUSD : -0.75
-
-(1, 1, 1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.88
-
- -- buyAUDUSD : 2.62
-
-(1, -2, 1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.25
-
- -- buyEURUSD : 2.99
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 1, -1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : -0.75
-
-(1, -1, -1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.99
-
- -- buyEURUSD : -0.19
-
- -- buyAUDUSD : -0.75
-
-(1, -1, 1, 0, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.00
-
- -- buyEURUSD : -0.88
-
- -- buyAUDUSD : -0.88
-
-(1, -1, 1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.08
-
- -- buyAUDUSD : -0.85
-
-(-1, 0, -1, 2, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.50
-
-(1, 0, 1, 1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.66
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : -0.88
-
-(-1, 0, -1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.77
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.95
-
-(-1, 0, 1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.03
-
- -- buyEURUSD : -0.20
+ -- buyEURUSD : -0.97
 
  -- buyAUDUSD : -0.98
 
-(-1, -1, 1, 1, 1, -1)
+(1, 1, 1, 0, -1, 1, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, 1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.70
+ -- buyGBPUSD : 4.88
 
  -- buyEURUSD : 1.00
 
- -- buyAUDUSD : 1.97
+ -- buyAUDUSD : 3.12
 
-(1, 0, 1, 0, -1, 0)
+(1, 1, -1, 0, -1, 1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.85
+ -- buyGBPUSD : 3.92
 
- -- buyEURUSD : -1.00
+ -- buyEURUSD : 1.22
 
- -- buyAUDUSD : 2.89
+ -- buyAUDUSD : 3.00
 
-(1, -1, -1, -1, -1, -1)
+(1, 1, -1, -1, 1, 1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.77
+ -- buyGBPUSD : 0.00
 
- -- buyEURUSD : -0.81
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(1, -2, -1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 0.00
 
  -- buyAUDUSD : -0.75
 
-(1, 0, 1, -2, -1, 1)
+(-1, -1, 1, -1, -1, 1, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : 2.62
+ -- buyGBPUSD : 5.00
 
- -- buyEURUSD : 1.75
+ -- buyEURUSD : 0.75
 
- -- buyAUDUSD : 1.50
+ -- buyAUDUSD : -0.38
 
-(-1, 0, 1, -1, 1, -2)
+(-1, 2, -1, 1, -1, 2, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -2153,34 +2216,97 @@
 
  -- buyAUDUSD : 0.00
 
-(-1, 1, -1, -1, 1, 0)
+(-1, 0, -1, 1, 1, 0, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.88
+ -- buyGBPUSD : 5.00
 
  -- buyEURUSD : -1.00
 
- -- buyAUDUSD : 2.69
+ -- buyAUDUSD : 2.00
 
-(1, 1, 1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.94
-
- -- buyEURUSD : -0.98
-
- -- buyAUDUSD : -0.75
-
-(1, -1, -1, 1, -1, -1)
+(1, -1, 1, -2, -1, 1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.75
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.94
+
+ -- buyAUDUSD : 3.26
+
+(1, 1, 1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, -1, -1, -1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 1.38
+
+ -- buyAUDUSD : -0.74
+
+(-1, -1, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.98
+
+ -- buyAUDUSD : 3.00
+
+(-1, 2, -1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, -1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
 
  -- buyEURUSD : -0.50
 
  -- buyAUDUSD : -0.50
 
-(-1, 2, -1, 2, -1, 1)
+(-1, -1, -1, -2, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, 0, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 2.56
+
+ -- buyAUDUSD : -0.25
+
+(-1, 0, 1, -1, -1, 2, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -2189,52 +2315,7 @@
 
  -- buyAUDUSD : 0.00
 
-(1, -2, -1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.50
-
- -- buyEURUSD : 1.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, -1, 2, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.75
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, -1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.88
-
- -- buyEURUSD : 0.91
-
- -- buyAUDUSD : -0.90
-
-(-1, -1, 1, -1, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.70
-
- -- buyEURUSD : 0.53
-
- -- buyAUDUSD : -0.94
-
-(-1, 2, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 1, -1, 2, 1, -1)
+(-1, -1, 1, -1, 1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.50
@@ -2243,7 +2324,25 @@
 
  -- buyAUDUSD : 0.00
 
-(1, 1, 1, -1, 1, 1)
+(1, -1, -1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.25
+
+ -- buyEURUSD : 3.19
+
+ -- buyAUDUSD : 0.62
+
+(1, 0, 1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 4.06
+
+(-1, -1, -1, 0, -1, -2, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -2252,124 +2351,628 @@
 
  -- buyAUDUSD : 0.00
 
-(1, 0, -1, 0, 1, 0)
+(1, 1, -1, 1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.38
+
+ -- buyEURUSD : 2.62
+
+ -- buyAUDUSD : 0.98
+
+(-1, 0, -1, 1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, 0, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.25
+
+ -- buyEURUSD : -0.87
+
+ -- buyAUDUSD : 4.00
+
+(-1, 1, 1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.99
+
+ -- buyAUDUSD : -1.00
+
+(1, -1, 1, -1, -1, -2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.75
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, -2, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.75
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : -0.50
+
+(1, -1, 1, -2, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, 1, -2, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : 1.38
+
+ -- buyAUDUSD : 3.09
+
+(1, -1, -1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 1.69
+
+ -- buyAUDUSD : 2.62
+
+(1, -1, 1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.50
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(1, -1, -1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.88
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 3.00
+
+(-1, 1, 1, 0, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.12
+
+ -- buyAUDUSD : 0.88
+
+(1, -1, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.19
+
+ -- buyEURUSD : 0.24
+
+ -- buyAUDUSD : -0.66
+
+(-1, 2, -1, 1, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, 1, -2, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 0, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.44
+
+ -- buyEURUSD : 4.94
+
+ -- buyAUDUSD : 1.00
+
+(1, 0, -1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 2.02
+
+(-1, 0, 1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.63
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 4.70
+
+(1, 1, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.92
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, -1, -1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.12
+
+(-1, 1, -1, 2, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 3.01
+
+(1, -1, -1, 0, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.48
+
+ -- buyEURUSD : 3.38
+
+ -- buyAUDUSD : 2.89
+
+(1, -1, 1, -1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.52
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : -0.92
+
+(1, -1, 1, 0, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.96
+
+ -- buyAUDUSD : -0.97
+
+(-1, 0, -1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.18
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(1, 1, 1, 0, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.98
+
+ -- buyAUDUSD : 2.56
+
+(1, -1, 1, -1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 2.84
+
+(-1, 2, -1, 0, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, 1, 1, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, -1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, 1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.34
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(1, -2, 1, -2, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.46
+
+ -- buyEURUSD : 0.81
+
+ -- buyAUDUSD : -0.09
+
+(-1, 0, -1, 1, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.73
+
+ -- buyAUDUSD : 2.00
+
+(-1, 1, -1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -0.94
+
+(1, -1, -1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.96
+
+ -- buyEURUSD : -0.38
+
+ -- buyAUDUSD : 3.00
+
+(1, 0, 1, -2, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.50
+
+(1, 0, 1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.38
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 3.69
+
+(1, -1, -1, -1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.50
+
+ -- buyEURUSD : -0.97
+
+ -- buyAUDUSD : 5.00
+
+(1, 0, 1, 0, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 1.50
+
+(-1, 1, 1, -1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, -1, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.31
+
+ -- buyEURUSD : 3.01
+
+ -- buyAUDUSD : 2.19
+
+(1, 1, 1, -1, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.19
+
+ -- buyEURUSD : 1.25
+
+ -- buyAUDUSD : -0.50
+
+(-1, 0, -1, -1, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 2, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.94
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 3.75
+
+(-1, 0, -1, 0, -1, 2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, 0, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.99
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 2.20
+
+(-1, 0, 1, 0, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : 4.98
+
+ -- buyAUDUSD : 2.00
+
+(-1, -1, 1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, 1, 0, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 2.00
+
+(1, -2, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, -1, -1, -1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.81
 
  -- buyEURUSD : -1.00
 
+ -- buyAUDUSD : 4.74
+
+(-1, 0, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.73
+
+ -- buyEURUSD : -0.88
+
  -- buyAUDUSD : -1.00
 
-(1, 0, 1, 0, -1, 1)
+(1, -1, 1, 0, 1, 0, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.25
-
-(-1, -1, -1, 0, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.89
+ -- buyGBPUSD : -0.91
 
  -- buyEURUSD : 2.00
 
- -- buyAUDUSD : 1.00
+ -- buyAUDUSD : 3.46
 
-(-1, -1, -1, 1, 1, 0)
+(-1, 0, -1, 1, -1, 0, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : 1.98
+ -- buyGBPUSD : -0.91
 
- -- buyEURUSD : 1.50
+ -- buyEURUSD : 1.56
 
- -- buyAUDUSD : 2.87
+ -- buyAUDUSD : 5.00
 
-(1, -1, 1, 0, -1, 0)
+(1, -1, 1, -1, 1, -2, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : 0.38
+ -- buyGBPUSD : 1.28
 
- -- buyEURUSD : -1.00
+ -- buyEURUSD : 1.25
 
- -- buyAUDUSD : 1.19
+ -- buyAUDUSD : -0.42
 
-(-1, 0, -1, 0, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.95
-
-(1, -1, -1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.50
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 2.99
-
-(-1, 2, -1, 1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : -0.50
-
-(1, 1, 1, -1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : 2.25
-
-(-1, 1, -1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.98
-
- -- buyAUDUSD : -0.43
-
-(-1, -1, 1, 0, -1, -1)
+(-1, 0, -1, 0, 1, -2, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.75
 
  -- buyEURUSD : -0.50
 
- -- buyAUDUSD : -0.50
+ -- buyAUDUSD : 0.00
 
-(1, 0, 1, 1, 1, -1)
+(1, 1, 1, 0, 1, 1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.99
+ -- buyGBPUSD : 2.62
+
+ -- buyEURUSD : 2.12
+
+ -- buyAUDUSD : -0.06
+
+(-1, -2, -1, 1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.01
+
+ -- buyEURUSD : 0.29
+
+ -- buyAUDUSD : 2.25
+
+(-1, 1, -1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.47
 
  -- buyEURUSD : -1.00
 
- -- buyAUDUSD : 1.09
+ -- buyAUDUSD : 2.51
 
-(-1, 1, -1, 1, 1, 0)
+(-1, 1, -1, 1, -1, -2, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.99
+ -- buyGBPUSD : 1.50
 
- -- buyEURUSD : -1.00
+ -- buyEURUSD : 0.00
 
- -- buyAUDUSD : -1.00
+ -- buyAUDUSD : -0.75
 
-(-1, 2, 1, 0, 1, -2)
+(-1, 1, 1, -1, -1, 2, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -2378,7 +2981,34 @@
 
  -- buyAUDUSD : 0.00
 
-(-1, 1, -1, -1, -1, -1)
+(-1, 0, -1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 3.75
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.75
+
+ -- buyEURUSD : 4.98
+
+ -- buyAUDUSD : 1.25
+
+(1, -1, -1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.81
+
+ -- buyEURUSD : -0.03
+
+ -- buyAUDUSD : -0.81
+
+(-1, -1, 1, -2, -1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -2387,241 +3017,124 @@
 
  -- buyAUDUSD : 0.00
 
-(1, 0, 1, 0, -1, 2)
+(-1, 0, -1, 0, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 2.50
+
+(-1, 0, 1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.87
+
+ -- buyAUDUSD : 2.97
+
+(1, -1, 1, -2, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.53
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.61
+
+(1, 1, 1, 0, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.75
+
+ -- buyEURUSD : 2.52
+
+ -- buyAUDUSD : 2.19
+
+(-1, 1, -1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.02
+
+ -- buyEURUSD : -0.12
+
+ -- buyAUDUSD : -0.97
+
+(-1, 0, 1, 0, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.53
+
+ -- buyEURUSD : -0.99
+
+ -- buyAUDUSD : 1.01
+
+(-1, -1, 1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.22
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.25
+
+ -- buyEURUSD : -0.87
+
+ -- buyAUDUSD : -0.95
+
+(-1, -1, 1, 0, 1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.50
 
- -- buyEURUSD : 1.00
+ -- buyEURUSD : 4.69
 
- -- buyAUDUSD : 1.00
+ -- buyAUDUSD : -0.75
 
-(-1, -2, 1, -1, -1, -1)
+(1, -2, 1, -2, -1, -1, 3)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
 
- -- buyEURUSD : 0.00
+ -- buyEURUSD : 2.50
 
  -- buyAUDUSD : 0.00
 
-(-1, 1, -1, -1, 1, 1)
+(-1, 0, 1, -1, 1, -1, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, -1, -1, -1, 1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -0.27
-
- -- buyEURUSD : 2.48
-
- -- buyAUDUSD : 1.94
-
-(-1, -1, -1, 0, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.03
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.50
-
-(1, 1, -1, -1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, -1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
+ -- buyGBPUSD : -0.25
 
  -- buyEURUSD : -1.00
 
- -- buyAUDUSD : -0.24
+ -- buyAUDUSD : -0.60
 
-(-1, -1, -1, 0, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.00
-
- -- buyAUDUSD : 1.50
-
-(-1, 1, -1, 0, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.31
-
- -- buyAUDUSD : -0.62
-
-(-1, 0, 1, 0, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 1.84
-
-(1, 0, -1, 1, 1, -1)
+(-1, 0, 1, -1, 1, 0, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 2.00
 
- -- buyEURUSD : -0.90
+ -- buyEURUSD : -0.72
 
- -- buyAUDUSD : -1.00
+ -- buyAUDUSD : -0.66
 
-(-1, -1, 1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, -1, 1, 1, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.75
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -0.61
-
-(1, 1, -1, 0, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, -2, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.08
-
- -- buyEURUSD : 2.31
-
- -- buyAUDUSD : -0.94
-
-(1, -1, -1, 1, 1, -1)
+(-1, 2, -1, 0, -1, 1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.97
 
- -- buyEURUSD : -1.00
+ -- buyEURUSD : -0.94
 
- -- buyAUDUSD : -1.00
+ -- buyAUDUSD : 4.96
 
-(-1, 0, -1, -1, -1, 0)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.27
-
- -- buyEURUSD : -0.75
-
- -- buyAUDUSD : 1.90
-
-(-1, 0, 1, -1, -1, 2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : -0.50
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, -1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 2.50
-
- -- buyEURUSD : 0.64
-
- -- buyAUDUSD : 1.34
-
-(-1, 1, 1, 1, -1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : -1.00
-
- -- buyAUDUSD : -1.00
-
-(-1, 0, -1, 0, 1, -2)
- -- nothing : 0.00
-
- -- buyGBPUSD : 1.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 1.50
-
-(1, 0, -1, 1, 1, 1)
- -- nothing : 0.00
-
- -- buyGBPUSD : -1.00
-
- -- buyEURUSD : 2.00
-
- -- buyAUDUSD : -0.83
-
-(1, 0, -1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(-1, 0, 1, -1, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.75
-
- -- buyEURUSD : 2.44
-
- -- buyAUDUSD : -0.82
-
-(-1, 0, -1, -2, -1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 1.50
-
- -- buyAUDUSD : 0.00
-
-(1, -1, -1, -2, 1, -1)
- -- nothing : 0.00
-
- -- buyGBPUSD : 0.00
-
- -- buyEURUSD : 0.00
-
- -- buyAUDUSD : 0.00
-
-(1, 0, 1, -2, 1, 0)
+(-1, -1, 1, 0, 1, -1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 0.00
@@ -2630,61 +3143,664 @@
 
  -- buyAUDUSD : -0.50
 
-(1, 1, -1, 0, 1, 0)
+(1, -1, 1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -0.99
+
+ -- buyAUDUSD : -1.00
+
+(-1, 0, -1, 1, -1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.81
+
+ -- buyEURUSD : 1.00
+
+ -- buyAUDUSD : 4.00
+
+(1, 1, -1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 0.38
+
+(1, 0, -1, 0, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.75
+
+ -- buyEURUSD : 3.02
+
+ -- buyAUDUSD : 0.23
+
+(1, 1, 1, 0, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.99
+
+ -- buyEURUSD : -0.62
+
+ -- buyAUDUSD : 1.97
+
+(-1, 1, -1, 0, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, 0, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.25
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : -0.94
+
+(-1, -1, -1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.78
+
+ -- buyEURUSD : -0.92
+
+ -- buyAUDUSD : -0.33
+
+(1, 0, 1, 1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 2.49
+
+ -- buyAUDUSD : -0.81
+
+(-1, 0, -1, -1, -1, 1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : 1.00
 
- -- buyEURUSD : 2.95
+ -- buyEURUSD : -0.63
 
- -- buyAUDUSD : 1.50
+ -- buyAUDUSD : -0.95
 
-(1, 0, 1, -2, -1, 0)
+(-1, 1, -1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.26
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.25
+
+(-1, 1, -1, -1, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, -2, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.99
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : -0.75
+
+(-1, 0, -1, 0, 1, -1, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : 1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 3.00
+
+(1, 0, -1, 1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 3.01
+
+ -- buyAUDUSD : -0.62
+
+(-1, 0, -1, 0, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 2.25
+
+(1, -1, 1, -1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.94
+
+ -- buyEURUSD : -0.56
+
+ -- buyAUDUSD : 3.57
+
+(1, 1, 1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.98
+
+ -- buyEURUSD : 1.06
+
+ -- buyAUDUSD : -0.84
+
+(1, -1, -1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.50
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -0.98
+
+(1, -1, 1, -2, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.38
+
+ -- buyEURUSD : -0.41
+
+ -- buyAUDUSD : -0.50
+
+(1, 1, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -0.62
+
+ -- buyAUDUSD : 3.99
+
+(1, -1, -1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 2.75
+
+(1, -1, 1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.50
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : -1.00
+
+(-1, 2, -1, 0, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
 
  -- buyEURUSD : 0.00
 
  -- buyAUDUSD : 0.00
 
-(1, -1, 1, 1, 1, 0)
+(1, 1, 1, 0, 1, 0, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : 2.81
+ -- buyGBPUSD : -0.56
+
+ -- buyEURUSD : -0.96
+
+ -- buyAUDUSD : -1.00
+
+(1, 0, -1, -1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 0.50
+
+ -- buyAUDUSD : 0.62
+
+(-1, 2, -1, 0, -1, 2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, -1, 0, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.99
+
+ -- buyEURUSD : 3.70
+
+ -- buyAUDUSD : 2.34
+
+(1, -1, -1, -1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 0, -1, 2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 3.75
+
+(-1, 2, -1, 2, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, -1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.69
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.50
+
+(1, 1, 1, -1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.99
+
+ -- buyEURUSD : 4.38
+
+ -- buyAUDUSD : 2.99
+
+(-1, 1, 1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : 2.00
+
+ -- buyAUDUSD : 1.00
+
+(1, 1, 1, 0, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.50
+
+(-1, 1, -1, 0, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : 3.87
+
+ -- buyAUDUSD : -1.00
+
+(1, 0, 1, 1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 3.56
+
+ -- buyAUDUSD : -0.75
+
+(-1, 0, -1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 1.55
+
+ -- buyAUDUSD : 3.01
+
+(-1, 0, -1, -1, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 4.12
+
+ -- buyAUDUSD : -0.50
+
+(-1, 1, -1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.97
+
+ -- buyEURUSD : -0.98
+
+ -- buyAUDUSD : -0.72
+
+(1, -1, -1, -1, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.50
+
+(1, 1, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.37
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 4.97
+
+(1, 0, 1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 3.01
+
+ -- buyAUDUSD : -1.00
+
+(1, -1, -1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.77
+
+ -- buyEURUSD : 2.65
+
+ -- buyAUDUSD : -0.44
+
+(1, -2, 1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.56
+
+ -- buyEURUSD : -0.54
+
+ -- buyAUDUSD : -0.50
+
+(1, -2, 1, -2, 1, -2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
 
  -- buyEURUSD : -0.75
 
  -- buyAUDUSD : -0.75
 
-(-1, -1, -1, 1, -1, 0)
+(-1, -1, 1, 1, 1, -1, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.97
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, 1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
 
  -- buyEURUSD : -0.98
+
+ -- buyAUDUSD : -0.96
+
+(-1, 1, -1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.22
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 2.56
+
+(1, 1, 1, 0, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.23
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 3.95
+
+(1, -1, 1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.53
+
+ -- buyEURUSD : 2.12
 
  -- buyAUDUSD : -1.00
 
-(-1, 0, -1, -1, -1, 1)
+(1, -2, 1, -2, -1, 0, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : -0.05
+ -- buyGBPUSD : 0.00
 
- -- buyEURUSD : -0.50
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.50
+
+(-1, -1, 1, -1, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.25
+
+ -- buyEURUSD : 0.19
 
  -- buyAUDUSD : -0.88
 
-(-1, 0, 1, -1, -1, 1)
+(-1, 1, -1, 1, -1, 2, 2)
  -- nothing : 0.00
 
- -- buyGBPUSD : 1.00
+ -- buyGBPUSD : -0.50
 
- -- buyEURUSD : -0.98
+ -- buyEURUSD : 1.50
 
- -- buyAUDUSD : -0.06
+ -- buyAUDUSD : 1.50
 
-(-1, 2, -1, 0, 1, -2)
+(-1, -1, 1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 4.64
+
+ -- buyAUDUSD : 2.00
+
+(1, -1, 1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 1.58
+
+ -- buyAUDUSD : 3.00
+
+(1, 0, -1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.96
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : 3.62
+
+(-1, 1, -1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.75
+
+(-1, 2, -1, 2, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -0.81
+
+(-1, 2, 1, 0, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.50
+
+(-1, -1, -1, 1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 1.50
+
+ -- buyAUDUSD : 1.50
+
+(-1, 1, 1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.25
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(-1, -1, -1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.25
+
+ -- buyEURUSD : 0.94
+
+ -- buyAUDUSD : 3.00
+
+(-1, 0, 1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -0.45
+
+(1, -1, -1, 1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.78
+
+(-1, -1, 1, 0, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 1.50
+
+(-1, -1, -1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.25
+
+ -- buyEURUSD : -0.94
+
+ -- buyAUDUSD : -1.00
+
+(-1, 2, 1, 0, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.88
+
+ -- buyEURUSD : 3.79
+
+ -- buyAUDUSD : 3.00
+
+(-1, 1, -1, 2, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.88
+
+ -- buyAUDUSD : 4.38
+
+(-1, 2, -1, 0, 1, -2, 1)
  -- nothing : 0.00
 
  -- buyGBPUSD : -0.50
@@ -2693,39 +3809,507 @@
 
  -- buyAUDUSD : 0.00
 
-(-1, 1, 1, 1, -1, 0)
+(-1, 0, -1, 2, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, -1, -1, 1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -1.00
 
- -- buyEURUSD : -0.99
+ -- buyEURUSD : -1.00
 
- -- buyAUDUSD : -0.63
+ -- buyAUDUSD : -1.00
 
-(-1, 0, 1, 0, -1, -1)
+(1, 0, -1, 1, 1, 0, 1)
  -- nothing : 0.00
 
- -- buyGBPUSD : 2.81
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 2.02
+
+(-1, 1, 1, 1, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 2, 1, 1, -1, 2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 2, -1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.50
+
+(1, -1, 1, -1, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.88
+
+ -- buyEURUSD : -0.50
+
+ -- buyAUDUSD : -0.75
+
+(1, 0, 1, -2, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 2.25
+
+(-1, 2, 1, 2, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : -0.72
+
+ -- buyAUDUSD : -0.88
+
+(-1, 1, -1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -1.00
+
+(1, 1, -1, -1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : -0.75
+
+(-1, -1, 1, 0, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.99
+
+ -- buyEURUSD : 0.08
+
+ -- buyAUDUSD : -0.93
+
+(-1, 1, -1, 1, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, 1, -1, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : 0.58
+
+ -- buyAUDUSD : 2.22
+
+(1, -1, -1, 0, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : 2.52
+
+ -- buyAUDUSD : 1.32
+
+(-1, 0, -1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -1.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 2.00
+
+(1, -1, -1, -1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.90
+
+ -- buyEURUSD : -0.43
+
+ -- buyAUDUSD : 1.50
+
+(-1, 0, 1, 0, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.50
+
+ -- buyEURUSD : -0.97
+
+ -- buyAUDUSD : -0.30
+
+(-1, -1, -1, -1, -1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.51
+
+ -- buyEURUSD : 4.94
+
+ -- buyAUDUSD : 2.75
+
+(1, 0, 1, -1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.96
 
  -- buyEURUSD : -0.88
 
- -- buyAUDUSD : 1.75
+ -- buyAUDUSD : -0.75
 
-(-1, -1, -1, 0, -1, 0)
+(1, -1, 1, 1, -1, 1, 3)
  -- nothing : 0.00
 
- -- buyGBPUSD : 2.69
+ -- buyGBPUSD : -0.50
 
- -- buyEURUSD : 2.75
+ -- buyEURUSD : 2.12
+
+ -- buyAUDUSD : -0.99
+
+(1, 0, 1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.61
+
+ -- buyEURUSD : 0.75
+
+ -- buyAUDUSD : 5.00
+
+(1, 0, -1, 0, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.75
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : -0.84
+
+(1, -1, 1, 1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.88
+
+ -- buyEURUSD : -0.85
+
+ -- buyAUDUSD : 4.38
+
+(1, -2, 1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -1, 1, 0, -1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 0, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.08
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 4.97
+
+(1, 1, 1, -1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.02
+
+ -- buyEURUSD : -0.13
 
  -- buyAUDUSD : -1.00
 
-(1, 0, -1, 1, 1, 0)
+(1, 1, -1, 1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 4.48
+
+ -- buyAUDUSD : 0.00
+
+(-1, 2, -1, 2, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, 1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : -0.19
+
+ -- buyAUDUSD : 5.00
+
+(1, -1, 1, -2, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : -0.75
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, 1, 1, 0, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.75
+
+ -- buyEURUSD : -0.94
+
+ -- buyAUDUSD : -0.75
+
+(-1, 0, -1, 0, -1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, -2, 1, -1, 1, -2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.75
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, -1, 1, -2, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 1.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, 1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.12
+
+ -- buyEURUSD : -0.98
+
+ -- buyAUDUSD : -0.97
+
+(-1, 1, -1, 1, -1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.63
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 3.00
+
+(-1, 0, -1, 1, -1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 3.00
+
+ -- buyAUDUSD : 1.06
+
+(-1, -1, -1, -1, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.00
+
+ -- buyEURUSD : -0.45
+
+ -- buyAUDUSD : -0.81
+
+(1, 1, -1, 0, 1, 1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 3.38
+
+(-1, 0, 1, 1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 2.50
+
+ -- buyAUDUSD : 0.00
+
+(-1, 1, -1, 1, 1, 0, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 4.00
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : 3.00
+
+(1, -1, 1, -1, -1, 2, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 1.50
+
+(1, 0, 1, 0, 1, -2, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(-1, 0, 1, -1, -1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 3.68
+
+ -- buyEURUSD : -1.00
+
+ -- buyAUDUSD : -0.64
+
+(1, -1, 1, -1, 1, 1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.50
+
+ -- buyEURUSD : 3.62
+
+ -- buyAUDUSD : 3.03
+
+(1, -1, 1, -2, 1, -1, 2)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 2.00
+
+ -- buyEURUSD : 0.48
+
+ -- buyAUDUSD : 0.54
+
+(-1, 1, 1, 1, -1, 1, 2)
  -- nothing : 0.00
 
  -- buyGBPUSD : -1.00
 
- -- buyEURUSD : -0.69
+ -- buyEURUSD : -0.06
 
  -- buyAUDUSD : -1.00
+
+(-1, 1, -1, 2, 1, -1, 1)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : -0.50
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 1, 1, 1, 1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 2.25
+
+ -- buyAUDUSD : 0.00
+
+(-1, -1, -1, -1, -1, 0, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.72
+
+ -- buyEURUSD : 1.06
+
+ -- buyAUDUSD : 3.75
+
+(1, 0, -1, -1, 1, -1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 0.00
+
+ -- buyEURUSD : 0.00
+
+ -- buyAUDUSD : 0.00
+
+(1, 0, -1, 1, -1, 1, 3)
+ -- nothing : 0.00
+
+ -- buyGBPUSD : 5.00
+
+ -- buyEURUSD : 1.25
+
+ -- buyAUDUSD : 4.93
 
